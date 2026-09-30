@@ -4355,16 +4355,18 @@ Main Header
             box-shadow: none;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .header-style-two {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    padding: 0 10px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    z-index: 99 !important;
+    padding: 12px 14px 0 !important;
+    margin-bottom: 12px !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
 }
 .header-style-two .header-lower .inner-container {
@@ -5883,19 +5885,23 @@ Section Title
   object-position: center center;
   z-index: 0;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .banner-section-two {
     height: auto !important;
     min-height: unset !important;
-    padding-top: 72px !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
     background: #161224;
+    overflow: hidden !important;
   }
   .banner-section-two .outer-box {
-    height: auto !important;
-    min-height: unset !important;
+    height: 52vh !important;
+    height: 52dvh !important;
+    min-height: 280px !important;
+    max-height: 440px !important;
     width: 100% !important;
-    aspect-ratio: 16 / 9 !important;
     position: relative !important;
+    overflow: hidden !important;
   }
   .banner-section-two .outer-box .banner-bg-box,
   .banner-section-two .outer-box .banner-bg {
@@ -5903,7 +5909,7 @@ Section Title
     height: 100% !important;
     min-height: unset !important;
     width: 100% !important;
-    aspect-ratio: 16 / 9 !important;
+    overflow: hidden !important;
   }
   .banner-section-two .outer-box .banner-bg video,
   .banner-section-two .outer-box .banner-bg .banner-video {
@@ -5913,9 +5919,10 @@ Section Title
     width: 100% !important;
     height: 100% !important;
     min-height: unset !important;
-    aspect-ratio: 16 / 9 !important;
+    display: block !important;
     -o-object-fit: cover !important;
        object-fit: cover !important;
+    object-position: center center !important;
   }
   .banner-section-two .scroll-down-arrow {
     display: none !important;

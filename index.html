@@ -47,11 +47,11 @@
         overflow: hidden !important;
       }
       .banner-section-two .outer-box {
-        height: 52vh !important;
-        height: 52dvh !important;
-        min-height: 280px !important;
-        max-height: 440px !important;
+        height: auto !important;
+        min-height: unset !important;
+        max-height: unset !important;
         width: 100% !important;
+        aspect-ratio: 16 / 9 !important;
         position: relative !important;
         overflow: hidden !important;
       }
@@ -59,8 +59,10 @@
       .banner-section-two .outer-box .banner-bg {
         position: relative !important;
         height: 100% !important;
-        min-height: unset !important;
         width: 100% !important;
+        aspect-ratio: 16 / 9 !important;
+        min-height: unset !important;
+        max-height: unset !important;
         overflow: hidden !important;
       }
       .banner-section-two .outer-box .banner-bg video,
@@ -70,10 +72,12 @@
         left: 0 !important;
         width: 100% !important;
         height: 100% !important;
+        aspect-ratio: 16 / 9 !important;
         min-height: unset !important;
+        max-height: unset !important;
         display: block !important;
-        -o-object-fit: cover !important;
-           object-fit: cover !important;
+        -o-object-fit: contain !important;
+           object-fit: contain !important;
         object-position: center center !important;
       }
       .banner-section-two .scroll-down-arrow {

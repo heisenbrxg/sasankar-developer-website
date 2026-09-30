@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sasankar Developers</title>
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    /* Ensure service card images & icons display properly across all browsers and file protocols */
+    .service-block .inner-block .image {
+      -webkit-mask-image: none !important;
+      mask-image: none !important;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <div class="preloader"></div>
+
+    <!-- Back-to-top start -->
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <!-- Back-to-top start -->
+
+    <!-- Main Header-->
+    <header class="main-header header-style-two">
+      <div class="header-lower ">
+        <div class="inner-container">
+          <!-- Main box -->
+          <div class="main-box">
+            <div class="left-box">
+              <div class="logo-box">
+                <div class="logo one">
+                  <a href="index.html"><img src="images/logo new.png" alt="Logo" /></a>
+                </div>
+                <div class="logo two">
+                  <a href="index.html"><img src="images/logo black.png" alt="Logo" /></a>
+                </div>
+              </div>
+              <!--Nav Box-->
+              <div class="nav-outer">
+                <nav class="nav main-menu">
+                  <ul class="navigation">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="page-about.html">About Us</a></li>
+                    <li><a href="page-services.html">Services</a></li>
+                    <li class="dropdown"><a href="#">Our Projects</a>
+                      <ul>
+                        <li><a href="page-ongoing-projects.html">On Going</a></li>
+                        <li><a href="page-projects.html">Project Portfolio</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="page-contact.html">Contact Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="right-box">
+              <a class="theme-btn btn-style-four" href="page-about.html">
+                <span class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+                <span class="btn-title">Read More</span>
+              </a>
+              <!--Mobile Navigation Toggler-->
+              <button class="mobile-nav-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu  -->
+      <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        <nav class="menu-box">
+          <div class="upper-box">
+            <div class="nav-logo">
+              <a href="index.html"><img src="images/logo black.png" alt="" /></a>
+            </div>
+            <div class="close-btn"><i class="icon fa fa-times"></i></div>
+          </div>
+          <ul class="navigation clearfix">
+            <!--Keep This Empty / Menu will come through Javascript-->
+          </ul>
+          <ul class="contact-list-one">
+            <li>
+              <i class="icon fa-regular fa-envelope"></i>
+              <span class="title">Send Email</span>
+              <div class="text"><a href="mailto:info@sasankardevelopers.com">info@sasankardevelopers.com</a></div>
+            </li>
+          </ul>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="icon fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon fab fa-pinterest-p"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon fab fa-vimeo-v"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End Mobile Menu -->
+
+      <!-- Header Search -->
+      <div class="search-popup">
+        <span class="search-back-drop"></span>
+        <button class="close-search"><span class="fa fa-times"></span></button>
+
+        <div class="search-inner">
+          <form method="post" action="index.html">
+            <div class="form-group">
+              <input type="search" name="search-field" value="" placeholder="Search..." required="" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- End Header Search -->
+
+      <!-- Sticky Header  -->
+      <div class="sticky-header">
+        <div class="auto-container">
+          <div class="inner-container">
+            <!--Logo-->
+            <div class="logo">
+              <a href="index.html"><img src="images/logo black.png" alt=""></a>
+            </div>
+
+            <!--Right Col-->
+            <div class="nav-outer">
+              <!-- Main Menu -->
+              <nav class="main-menu">
+                <div class="navbar-collapse show collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                  </ul>
+                </div>
+              </nav>
+              <!-- Main Menu End-->
+
+              <!--Mobile Navigation Toggler-->
+              <div class="mobile-nav-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <a href="tel:+919884514104" class="header-phone_box">
+              <span class="icon"><i aria-hidden="true" class="fas fa-phone-alt"></i></span>
+              <span class="info">
+                Call Anytime
+                <strong>+91 98845 14104</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Sticky Menu -->
+    </header>
+    <!--End Main Header -->
+
+    <!-- start banner-section -->
+    <section class="banner-section-two">
+      <div class="outer-box">
+        <div class="banner-bg-box">
+          <div class="banner-bg banner-video-bg">
+            <video class="banner-video" autoplay muted loop playsinline webkit-playsinline x5-playsinline preload="auto"
+              poster="images/banner for home page.png">
+              <source src="https://res.cloudinary.com/dwgwxdwif/video/upload/v1790560524/Sashankar_Video_2_ohqorf.mp4"
+                type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <a href="#features" class="scroll-down-arrow" aria-label="Scroll Down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+    <!-- end banner-section -->
+
+    <!-- start feature-section -->
+    <section class="feature-section-two" id="features">
+      <div class="auto-container">
+        <div class="row gx-3">
+          <div class="feature-block col-xl-4 col-md-6">
+            <div class="inner-block">
+              <div class="icon"><i class="flaticon-set-building-plan"></i></div>
+              <div class="h4 title">Quality First</div>
+              <div class="text">Premium materials and proven construction methods ensure lasting excellence</div>
+            </div>
+          </div>
+          <div class="feature-block col-xl-4 col-md-6">
+            <div class="inner-block">
+              <div class="icon"><i class="flaticon-set-building-2"></i></div>
+              <div class="h4 title">Punctual Execution</div>
+              <div class="text">Meticulous planning and management ensure projects finish on schedule</div>
+            </div>
+          </div>
+          <div class="feature-block col-xl-4 col-md-6">
+            <div class="inner-block">
+              <div class="icon"><i class="flaticon-set-investment"></i></div>
+              <div class="h4 title">Transparent Collaboration</div>
+              <div class="text">Clear communication builds trust throughout every project journey</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end feature-section -->
+
+    <!-- start about-section-two -->
+    <section class="about-section-two">
+      <div class="shape-1 bounce-x"><img src="images/icons/shape-13.png" alt=""></div>
+      <div class="auto-container">
+        <div class="row">
+          <div class="content-column col-lg-7">
+            <div class="inner-column wow fadeInUp" data-wow-delay="200ms">
+              <div class="sec-title">
+                <div class="h6 sub-title">Who We Are</div>
+                <div class="h2 title char-animation">Building excellence through quality engineering, strategic
+                  planning, and lasting developments
+                </div>
+              </div>
+              <div class="bottom-box">
+                <div class="inner-box">
+                  <div class="counter-box">
+                    <div class="icon"><img src="images/icons/shape-12.png" alt=""></div>
+                    <div class="h2 count-box">
+                      <span class="count-text" data-speed="1500" data-stop="17">0</span><sup>+</sup>
+                    </div>
+                    <div class="h4 title">Years Of Experience</div>
+                  </div>
+                  <div class="image"><img src="images/home page img 1.jpg" alt="Who We Are"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image-column col-lg-5">
+            <div class="inner-column wow fadeInUp" data-wow-delay="400ms">
+              <div class="image"><img src="images/home page img 2.jpg" alt="Who We Are"></div>
+              <div class="text">With over 17 years of experience, we deliver quality construction, modern design, strong
+                engineering, and thoughtfully developed spaces that create lasting value for our clients today.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about-section-two -->
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="shape-1"><img src="images/icons/shape-14.png" alt=""></div>
+      <div class="auto-container">
+        <div class="sec-title text-center">
+          <div class="h6 sub-title">WHAT WE DO</div>
+          <div class="h2 title char-animation">Building With Purpose</div>
+        </div>
+        <div class="row gx-3">
+          <div class="col-xl-4 col-md-6">
+            <div class="service-block wow fadeInUp" data-wow-delay="200ms">
+              <div class="inner-block">
+                <div class="image">
+                  <img src="images/1. Modern Residential Developments.jpg" alt="Modern Residential Developments">
+                  <img src="images/1. Modern Residential Developments.jpg" alt="Modern Residential Developments">
+                  <div class="icon"><i class="flaticon-set-investment"></i></div>
+                </div>
+                <div class="content">
+                  <div class="h4 title"><a href="page-service-details.html">1. Residential Development <br><span
+                        style="font-size:0.75em;font-weight:400;">Modern Homes &amp; Communities</span></a></div>
+                  <a class="btn-service-style" href="page-contact.html">Learn More <i
+                      class="icon-arrow far fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="service-block wow fadeInUp" data-wow-delay="400ms">
+              <div class="inner-block">
+                <div class="image">
+                  <img src="images/2. Construction & Engineering.jpg" alt="Construction & Engineering">
+                  <img src="images/2. Construction & Engineering.jpg" alt="Construction & Engineering">
+                  <div class="icon"><i class="flaticon-set-building-2"></i></div>
+                </div>
+                <div class="content">
+                  <div class="h4 title"><a href="page-service-details.html">2. Construction &amp; Engineering <br><span
+                        style="font-size:0.75em;font-weight:400;">Quality Built With Precision</span></a></div>
+                  <a class="btn-service-style" href="page-contact.html">Learn More <i
+                      class="icon-arrow far fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="service-block wow fadeInUp" data-wow-delay="600ms">
+              <div class="inner-block">
+                <div class="image">
+                  <img src="images/3. Strategic Project Planning.jpg" alt="Strategic Project Planning">
+                  <img src="images/3. Strategic Project Planning.jpg" alt="Strategic Project Planning">
+                  <div class="icon"><i class="flaticon-set-location"></i></div>
+                </div>
+                <div class="content">
+                  <div class="h4 title"><a href="page-service-details.html">3. Project Management <br><span
+                        style="font-size:0.75em;font-weight:400;">From Planning To Completion</span></a></div>
+                  <a class="btn-service-style" href="page-contact.html">Learn More <i
+                      class="icon-arrow far fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- start why-choose-us-section-two -->
+    <section class="why-choose-us-section-two">
+      <div class="bg-shape"><img src="images/icons/shape-15.png" alt=""></div>
+      <div class="auto-container">
+        <div class="sec-title light text-center">
+          <div class="h6 sub-title">Why Choose Us</div>
+          <div class="h2 title char-animation">What Makes Sashankar Developers Different</div>
+        </div>
+        <div class="row">
+          <div class="image-column col-xl-6">
+            <div class="inner-column">
+              <div class="image wow reveal-top tm-gsap-img-parallax overflow-hidden"><img
+                  src="images/image 5.jpg" alt="Why Choose Us - Sashankar Developers"></div>
+              <div class="icon-box">
+                <div class="icon"><img src="images/icons/wcu2-1.png" alt=""></div>
+                <span>
+                  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <path id="circlePath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"></path>
+                    </defs>
+                    <text letter-spacing="6" text-anchor="middle">
+                      <textPath href="#circlePath" startOffset="50%">
+                        17 years of experience - 17 years of experience </textPath>
+                    </text>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="content-column col-xl-6">
+            <div class="inner-column">
+              <div class="why-choose-us-block">
+                <div class="inner-block">
+                  <div class="icon"><i class="flaticon-set-residential"></i></div>
+                  <div class="content">
+                    <div class="h4 title">Quality First</div>
+                    <div class="text">Premium materials and proven construction methods ensure every project meets our
+                      high standards.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="why-choose-us-block">
+                <div class="inner-block">
+                  <div class="icon"><i class="flaticon-set-agreement"></i></div>
+                  <div class="content">
+                    <div class="h4 title">Expert Engineering</div>
+                    <div class="text">Robust engineering practices ensure structural integrity, precise execution, and
+                      dependable construction.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="why-choose-us-block">
+                <div class="inner-block">
+                  <div class="icon"><i class="flaticon-set-building-2"></i></div>
+                  <div class="content">
+                    <div class="h4 title">Punctual Execution</div>
+                    <div class="text">Meticulous planning and timeline management help us deliver projects on schedule.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="why-choose-us-block">
+                <div class="inner-block">
+                  <div class="icon"><i class="flaticon-set-investment"></i></div>
+                  <div class="content">
+                    <div class="h4 title">Transparent Collaboration</div>
+                    <div class="text">Clear communication with clients and stakeholders builds lasting trust throughout
+                      every project.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="why-choose-us-block">
+                <div class="inner-block">
+                  <div class="icon"><i class="flaticon-set-architecture"></i></div>
+                  <div class="content">
+                    <div class="h4 title">Proven Delivery</div>
+                    <div class="text">Successfully delivered large-scale developments with a strong focus on quality,
+                      execution, and client expectations.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end why-choose-us-section-two -->
+
+    <!-- start video-section -->
+    <section class="video-section">
+      <div class="outer-box hide-arch">
+        <div class="bg-image"><img src="images/banner for home page.png" alt="Sashankar Developers"></div>
+        <div class="video-box wow fadeInUp" data-wow-delay="400ms" style="min-height: 520px;"></div>
+      </div>
+    </section>
+    <!-- end video-section -->
+
+
+    <!-- start faq-section -->
+    <section class="faq-section-two">
+      <div class="auto-container">
+        <div class="row">
+          <div class="content-column col-xl-6">
+            <div class="inner-coloumn wow fadeInUp" data-wow-delay="200ms">
+              <div class="sec-title">
+                <div class="h6 sub-title">asked Question</div>
+                <div class="h2 title char-animation">All essential property doubts clarified</div>
+              </div>
+              <div class="info-box">
+                <div class="image"><img src="images/resource/faq2-1.jpg" alt=""></div>
+                <div class="content">
+                  <div class="h4 title">Have Any Question on Your Minds?</div>
+                  <a class="theme-btn btn-style-four" href="page-faq.html">
+                    <span class="icon">
+                      <i class="fa-solid fa-arrow-right"></i>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                    <span class="btn-title">Reed More</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-column col-xl-6">
+            <div class="inner-column wow fadeInUp" data-wow-delay="400ms">
+              <div class="faq-box">
+                <div class="inner-box">
+                  <ul class="accordion-box">
+                    <!--Block-->
+                    <li class="accordion block">
+                      <div class="acc-btn active">1. What type of projects does Sashankar Developers undertake?
+                        <i class="icon fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="acc-content">
+                        <div class="content">
+                          <div class="text">We undertake construction and real estate developments, combining robust engineering, modern design, strategic planning, and quality-focused execution.</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--Block-->
+                    <li class="accordion block active-block">
+                      <div class="acc-btn">2. How do you ensure project quality?
+                        <i class="icon fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="acc-content current">
+                        <div class="content">
+                          <div class="text">We use premium materials, proven construction methodologies, rigorous quality control, and strong engineering practices throughout every stage of development.</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--Block-->
+                    <li class="accordion block">
+                      <div class="acc-btn">3. How do you ensure projects are completed on time?
+                        <i class="icon fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="acc-content">
+                        <div class="content">
+                          <div class="text">Through meticulous project planning, dynamic timeline management, and coordinated execution, we work to deliver every project according to committed schedules.</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--Block-->
+                    <li class="accordion block">
+                      <div class="acc-btn">4. Can project requirements be customized?
+                        <i class="icon fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="acc-content">
+                        <div class="content">
+                          <div class="text">We work closely with clients and stakeholders to understand project requirements and deliver thoughtfully planned solutions aligned with their expectations.</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!--Block-->
+                    <li class="accordion block">
+                      <div class="acc-btn">5. How do you maintain transparency during projects?
+                        <i class="icon fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="acc-content">
+                        <div class="content">
+                          <div class="text">Clear communication and transparent collaboration with clients and stakeholders help build trust and ensure smooth coordination from planning through project handover.</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end faq-section -->
+
+    <!-- start conatct-section-two -->
+
+    <!-- end client section -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer footer-style-one">
+      <!-- Widgets Section -->
+      <div class="widgets-section">
+        <div class="auto-container">
+          <div class="row align-items-center">
+            <!-- Footer Column -->
+            <div class="footer-column col-lg-5">
+              <div class="footer-widget about-widget wow fadeInLeft">
+                <div class="footer-logo"><img src="images/logo new.png" alt=""></div>
+              </div>
+            </div>
+            <!-- footer column -->
+            <div class="footer-column col-lg-2">
+            </div>
+            <div class="footer-column style-two col-lg-5">
+              <div class="footer-widget subscribe-widget wow fadeInLeft" data-wow-delay="200ms">
+                <div class="h5 text">Get the latest inspiration & insights</div>
+              </div>
+            </div>
+          </div>
+          <hr class="mb-40">
+          <div class="row">
+            <!-- Footer Column -->
+            <div class="footer-column border-0 col-lg-5 col-md-4">
+              <div class="footer-widget about-widget wow fadeInLeft">
+                <div class="widget-content">
+                  <div class="contact-area">
+                    <a class="phone" href="tel:+919884514104">+91 98845 14104</a>
+                    <a class="mail" href="mailto:info@sasankardevelopers.com">info@sasankardevelopers.com</a>
+                  </div>
+                  <div class="social-widget mt-30">
+                    <ul class="social-icon-list1 mb-5 mb-lg-0">
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- footer column -->
+            <div class="footer-column border-0 col-lg-2 col-md-1">
+            </div>
+            <div class="footer-column style-two border-0 col-lg-5 col-md-7">
+              <div class="row d-block d-md-flex">
+                <div class="footer-widget links-widget col wow fadeInLeft" data-wow-delay="400ms">
+                  <div class="h5 widget-title">Quick Link</div>
+                  <div class="widget-content mb-5 mb-sm-0">
+                    <ul class="user-links">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Our Portfolio</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-widget style-two links-widget col wow fadeInLeft" data-wow-delay="400ms">
+                  <div class="h5 widget-title">Our Works</div>
+                  <div class="widget-content">
+                    <ul class="user-links">
+                      <li><a href="#">Apartment Building</a></li>
+                      <li><a href="#">Construction Management</a></li>
+                      <li><a href="#">Investment & Capital</a></li>
+                      <li><a href="#">Architecture & Design</a></li>
+                      <li><a href="#">Projects Management</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="inner-container justify-content-center justify-content-sm-between">
+              <p class="copyright-text">© Copyright Reserved by Sashankar Developers</p>
+              <ul class="d-flex align-items-center gap-3">
+                <li><a href="#0">Privacy Policy</a></li>
+                <li><a href="#0">Term of Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Main Footer -->
+
+
+  </div>
+  <!-- End Page Wrapper -->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/bxslider.js"></script>
+  <script src="js/knob.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/splitType.js"></script>
+  <script src="js/gsap-scroll-smoother.js"></script>
+  <script src="js/gsap-scroll-to-plugin.js"></script>
+  <script src="js/SplitText.min.js"></script>
+  <script src="js/custom-gsap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -5924,9 +5924,21 @@ Section Title
     min-height: unset !important;
     max-height: unset !important;
     display: block !important;
+    pointer-events: none !important;
     -o-object-fit: contain !important;
        object-fit: contain !important;
     object-position: center center !important;
+  }
+  .banner-video::-webkit-media-controls,
+  .banner-video::-webkit-media-controls-start-playback-button,
+  .banner-video::-webkit-media-controls-play-button,
+  .banner-video::-webkit-media-controls-overlay-play-button,
+  .banner-video::-webkit-media-controls-enclosure {
+    display: none !important;
+    -webkit-appearance: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
   }
   .banner-section-two .scroll-down-arrow {
     display: none !important;

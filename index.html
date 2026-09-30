@@ -76,9 +76,21 @@
         min-height: unset !important;
         max-height: unset !important;
         display: block !important;
+        pointer-events: none !important;
         -o-object-fit: contain !important;
            object-fit: contain !important;
         object-position: center center !important;
+      }
+      .banner-video::-webkit-media-controls,
+      .banner-video::-webkit-media-controls-start-playback-button,
+      .banner-video::-webkit-media-controls-play-button,
+      .banner-video::-webkit-media-controls-overlay-play-button,
+      .banner-video::-webkit-media-controls-enclosure {
+        display: none !important;
+        -webkit-appearance: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
       }
       .banner-section-two .scroll-down-arrow {
         display: none !important;
@@ -259,11 +271,41 @@
       <div class="outer-box">
         <div class="banner-bg-box">
           <div class="banner-bg banner-video-bg">
-            <video class="banner-video" autoplay muted loop playsinline webkit-playsinline x5-playsinline preload="auto"
-              poster="images/banner for home page.png">
+            <video class="banner-video" autoplay muted loop playsinline webkit-playsinline x5-playsinline preload="auto">
               <source src="https://res.cloudinary.com/dwgwxdwif/video/upload/v1790560524/Sashankar_Video_2_ohqorf.mp4"
                 type="video/mp4" />
             </video>
+            <script>
+              (function() {
+                var v = document.querySelector('.banner-video');
+                if (v) {
+                  v.muted = true;
+                  v.defaultMuted = true;
+                  v.playsInline = true;
+                  v.loop = true;
+                  function tryPlay() {
+                    if (v.paused) {
+                      v.muted = true;
+                      var p = v.play();
+                      if (p !== undefined) { p.catch(function(){}); }
+                    }
+                  }
+                  tryPlay();
+                  v.addEventListener('loadedmetadata', tryPlay);
+                  v.addEventListener('canplay', tryPlay);
+                  v.addEventListener('ended', function() {
+                    v.currentTime = 0;
+                    tryPlay();
+                  });
+                  ['touchstart', 'touchend', 'click', 'scroll'].forEach(function(evt) {
+                    window.addEventListener(evt, tryPlay, { once: true, passive: true });
+                  });
+                  document.addEventListener('visibilitychange', function() {
+                    if (!document.hidden) { tryPlay(); }
+                  });
+                }
+              })();
+            </script>
           </div>
         </div>
       </div>

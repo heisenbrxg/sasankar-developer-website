@@ -635,14 +635,45 @@ var THEMEMASCOT = {};
 		});
 	}
 
-	// Banner video autoplay guarantee
+	// Banner video autoplay and continuous loop guarantee (especially for mobile)
 	var bannerVideos = document.querySelectorAll('.banner-video');
 	bannerVideos.forEach(function (vid) {
 		vid.muted = true;
-		var playPromise = vid.play();
-		if (playPromise !== undefined) {
-			playPromise.catch(function () {});
+		vid.defaultMuted = true;
+		vid.setAttribute('muted', '');
+		vid.playsInline = true;
+		vid.setAttribute('playsinline', '');
+		vid.setAttribute('webkit-playsinline', '');
+		vid.loop = true;
+		vid.setAttribute('loop', '');
+
+		function triggerPlay() {
+			if (vid.paused) {
+				vid.muted = true;
+				var playPromise = vid.play();
+				if (playPromise !== undefined) {
+					playPromise.catch(function () {});
+				}
+			}
 		}
+
+		triggerPlay();
+		vid.addEventListener('loadedmetadata', triggerPlay);
+		vid.addEventListener('canplay', triggerPlay);
+		vid.addEventListener('ended', function () {
+			vid.currentTime = 0;
+			triggerPlay();
+		});
+
+		['touchstart', 'touchend', 'click', 'scroll'].forEach(function (evt) {
+			window.addEventListener(evt, triggerPlay, { once: true, passive: true });
+		});
+
+		document.addEventListener('visibilitychange', function () {
+			if (!document.hidden) {
+				triggerPlay();
+			}
+		});
 	});
 
 

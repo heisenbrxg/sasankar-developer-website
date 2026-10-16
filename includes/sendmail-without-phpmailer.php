@@ -2,7 +2,7 @@
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
   // Multiple recipients
-  $to = 'ismailcseku@gmail.com';
+  $to = 'sd.office.che@gmail.com';
 
 
   $name = $_POST['form_name'];

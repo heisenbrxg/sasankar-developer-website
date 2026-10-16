@@ -21,6 +21,269 @@
       overflow: hidden;
       border-radius: 20px;
     }
+
+    /* Ongoing Projects Enhancements */
+    .project-box1.ongoing-card .inner-box {
+      margin-bottom: 30px;
+    }
+    .project-box1.ongoing-card .thumb {
+      border-radius: 28px;
+    }
+    .project-box1.ongoing-card .thumb .project-loc-tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(22, 18, 36, 0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      letter-spacing: 0.3px;
+    }
+    .project-box1.ongoing-card .thumb .project-loc-tag i {
+      color: var(--theme-color1);
+      font-size: 11px;
+    }
+
+    .project-card-body {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 22px 20px;
+      margin-top: -30px;
+      margin-left: 12px;
+      margin-right: 12px;
+      position: relative;
+      z-index: 3;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      border: 1px solid #edf0f5;
+      transition: all 0.35s ease;
+    }
+    .project-box1:hover .project-card-body {
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+      border-color: rgba(238, 255, 4, 0.7);
+      transform: translateY(-4px);
+    }
+    .project-card-body .catogory-box a {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #718096;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 4px;
+    }
+    .project-card-body .title {
+      margin-bottom: 14px;
+    }
+    .project-card-body .title a {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--headings-color);
+      font-family: var(--font-family-style3);
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+    .project-specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .spec-chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f8fafc;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid #edf2f7;
+      min-height: 52px;
+    }
+    .spec-chip .icon {
+      width: 30px;
+      height: 30px;
+      background: rgba(34, 34, 34, 0.06);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--theme-color2);
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+    .spec-chip .spec-meta {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      overflow: hidden;
+    }
+    .spec-chip .spec-meta .lbl {
+      font-size: 10px;
+      color: #718096;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+    }
+    .spec-chip .spec-meta .val {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--headings-color);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .project-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .project-card-footer .price-wrap {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .project-card-footer .price-label {
+      font-size: 10.5px;
+      color: #718096;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .project-card-footer .price-amount {
+      font-size: 18px;
+      font-weight: 800;
+      color: #161224;
+      font-family: var(--font-family-style3);
+      letter-spacing: 0.5px;
+    }
+    .project-enquire-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--theme-color2);
+      color: #ffffff !important;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .project-enquire-btn:hover {
+      background: var(--theme-color1);
+      color: var(--theme-color2) !important;
+      transform: translateX(2px);
+    }
+    .project-enquire-btn i {
+      font-size: 11px;
+      transition: transform 0.3s ease;
+    }
+    .project-enquire-btn:hover i {
+      transform: translateX(3px);
+    }
+    @media (max-width: 480px) {
+      .project-specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .project-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .project-enquire-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* Card Day/Night Switcher */
+    .card-dn-switch {
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      background: rgba(22, 18, 36, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 4px;
+      border-radius: 50px;
+      display: inline-flex;
+      gap: 3px;
+      z-index: 5;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    }
+    .card-dn-switch .switch-opt {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 30px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.25s ease;
+    }
+    .card-dn-switch .switch-opt i {
+      font-size: 11px;
+    }
+    .card-dn-switch .switch-opt.active {
+      background: var(--theme-color1);
+      color: var(--theme-color2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .card-citadel-night {
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .card-citadel-day {
+      transition: opacity 0.5s ease-in-out;
+    }
+    .btn-dn-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(238, 255, 4, 0.15);
+      color: var(--theme-color2);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      margin-top: 4px;
+      transition: all 0.25s ease;
+    }
+    .btn-dn-pill:hover {
+      background: var(--theme-color1);
+      color: var(--theme-color2);
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 
@@ -110,7 +373,7 @@
             <li>
               <i class="icon fa-regular fa-envelope"></i>
               <span class="title">Send Email</span>
-              <div class="text"><a href="mailto:info@sasankardevelopers.com">info@sasankardevelopers.com</a></div>
+              <div class="text"><a href="mailto:sd.office.che@gmail.com">sd.office.che@gmail.com</a></div>
             </li>
           </ul>
           <ul class="social-links">
@@ -176,11 +439,11 @@
               </div>
             </div>
             
-            <a href="tel:+919884514104" class="header-phone_box">
+            <a href="tel:+919043934410" class="header-phone_box">
               <span class="icon"><i aria-hidden="true" class="fas fa-phone-alt"></i></span>
               <span class="info">
                 Call Anytime
-                <strong>+91 98845 14104</strong>
+                <strong>+91 90439 34410</strong>
               </span>
             </a>
           </div>
@@ -214,54 +477,150 @@
         </div>
         <div class="row gx-4">
           <!-- Project 1: THE CITADEL -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-box1 wow fadeInUp" data-wow-delay=".1s">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-box1 ongoing-card wow fadeInUp" data-wow-delay=".1s">
               <div class="inner-box">
-                <div class="thumb" style="height: 380px;">
-                  <img src="images/THE CITADEL.jpg" alt="The Citadel">
-                  <img src="images/THE CITADEL.jpg" alt="The Citadel">
-                  <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="tag" style="top:25px;left:25px;font-size:13px;padding:6px 18px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                <div class="thumb" style="height: 330px;">
+                  <img src="images/citadel-day-web.jpg" alt="The Citadel - Day View" class="card-citadel-day">
+                  <img src="images/citadel-night-web.jpg" alt="The Citadel - Night View" class="card-citadel-night">
+                  <a href="page-ongoing-projects.html#citadel-transformation" class="arrow-icon" title="View Day/Night Transformation"><i class="fa-solid fa-sliders"></i></a>
+                  <div class="tag" style="top:20px;left:20px;font-size:12px;padding:6px 16px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="project-loc-tag"><i class="fa-solid fa-location-dot"></i> Rajakilpakkam</div>
+
+                  <!-- Interactive Card Day/Night Switch -->
+                  <div class="card-dn-switch">
+                    <button type="button" class="switch-opt active" onclick="switchCitadelCardView('day', this)"><i class="fa-solid fa-sun"></i> Day</button>
+                    <button type="button" class="switch-opt" onclick="switchCitadelCardView('night', this)"><i class="fa-solid fa-moon"></i> Night</button>
+                  </div>
                 </div>
-                <div class="content">
-                  <div class="catogory-box"><a href="page-contact.html">Luxury High-Rise Residential</a></div>
+                <div class="content project-card-body">
+                  <div class="catogory-box d-flex justify-content-between align-items-center">
+                    <a href="page-contact.html">Luxury High-Rise</a>
+                    <a href="page-ongoing-projects.html#citadel-transformation" class="btn-dn-pill"><i class="fa-solid fa-sliders"></i> Day &amp; Night</a>
+                  </div>
                   <div class="h4 title"><a href="page-contact.html">The Citadel</a></div>
+                  
+                  <div class="project-specs-grid">
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-bed"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Configuration</span>
+                        <span class="val">2, 2.5 &amp; 3 BHK</span>
+                      </div>
+                    </div>
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-map-pin"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Location</span>
+                        <span class="val">Rajakilpakkam</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                    <div class="price-wrap">
+                      <span class="price-label">Starts From</span>
+                      <span class="price-amount">₹74 Lakh – 1.10 Cr</span>
+                    </div>
+                    <a href="page-contact.html" class="project-enquire-btn">
+                      <span>Enquire</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Project 2: BLOSSOM -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-box1 wow fadeInUp" data-wow-delay=".2s">
+          <!-- Project 2: ROYAL OAK -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-box1 ongoing-card wow fadeInUp" data-wow-delay=".2s">
               <div class="inner-box">
-                <div class="thumb" style="height: 380px;">
-                  <img src="images/BLOSSOM.jpg" alt="Blossom">
-                  <img src="images/BLOSSOM.jpg" alt="Blossom">
+                <div class="thumb" style="height: 330px;">
+                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak - Urapakkam">
+                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak - Urapakkam">
                   <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="tag" style="top:25px;left:25px;font-size:13px;padding:6px 18px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="tag" style="top:20px;left:20px;font-size:12px;padding:6px 16px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="project-loc-tag"><i class="fa-solid fa-location-dot"></i> Urapakkam</div>
                 </div>
-                <div class="content">
-                  <div class="catogory-box"><a href="page-contact.html">Gated Villa Community &amp; Layouts</a></div>
-                  <div class="h4 title"><a href="page-contact.html">Blossom</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: ROYAL OAK -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-box1 wow fadeInUp" data-wow-delay=".3s">
-              <div class="inner-box">
-                <div class="thumb" style="height: 380px;">
-                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak">
-                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak">
-                  <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="tag" style="top:25px;left:25px;font-size:13px;padding:6px 18px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
-                </div>
-                <div class="content">
+                <div class="content project-card-body">
                   <div class="catogory-box"><a href="page-contact.html">Premium Residential Apartments</a></div>
                   <div class="h4 title"><a href="page-contact.html">Royal Oak</a></div>
+                  
+                  <div class="project-specs-grid">
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-building"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Structure &amp; Units</span>
+                        <span class="val">5 Floors (20 Units)</span>
+                      </div>
+                    </div>
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-ruler-combined"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Built-Up Area</span>
+                        <span class="val">806 – 910 Sq. Ft.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                    <div class="price-wrap">
+                      <span class="price-label">Price Range</span>
+                      <span class="price-amount">₹44 L – ₹50.5 L</span>
+                    </div>
+                    <a href="page-contact.html" class="project-enquire-btn">
+                      <span>Enquire</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: BLOSSOM -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-box1 ongoing-card wow fadeInUp" data-wow-delay=".3s">
+              <div class="inner-box">
+                <div class="thumb" style="height: 330px;">
+                  <img src="images/BLOSSOM.jpg" alt="Blossom - Chennai">
+                  <img src="images/BLOSSOM.jpg" alt="Blossom - Chennai">
+                  <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
+                  <div class="tag" style="top:20px;left:20px;font-size:12px;padding:6px 16px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="project-loc-tag"><i class="fa-solid fa-location-dot"></i> Chennai</div>
+                </div>
+                <div class="content project-card-body">
+                  <div class="catogory-box"><a href="page-contact.html">Gated Villa Community &amp; Layouts</a></div>
+                  <div class="h4 title"><a href="page-contact.html">Blossom</a></div>
+                  
+                  <div class="project-specs-grid">
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Community Type</span>
+                        <span class="val">Gated Villa Plots</span>
+                      </div>
+                    </div>
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-compass-drafting"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Development</span>
+                        <span class="val">Master Planned</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                    <div class="price-wrap">
+                      <span class="price-label">Pricing</span>
+                      <span class="price-amount">Price On Request</span>
+                    </div>
+                    <a href="page-contact.html" class="project-enquire-btn">
+                      <span>Enquire</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -396,8 +755,8 @@
                   <div class="h4 help-title" style="color:#fff;font-weight:700;margin-bottom:12px;line-height:1.3;font-family:var(--font-family-style3);">Talk With Our <br>Project Experts</div>
                   <div class="help-contact">
                     <p style="color:rgba(255,255,255,0.7);font-size:14px;margin-bottom:18px;">Ready to discuss your next construction or development project?</p>
-                    <a href="tel:+919884514104" style="color:var(--theme-color1);font-size:1.25rem;font-weight:700;display:inline-flex;align-items:center;gap:10px;text-decoration:none;">
-                      <i class="fa-solid fa-phone"></i> +91 98845 14104
+                    <a href="tel:+919043934410" style="color:var(--theme-color1);font-size:1.25rem;font-weight:700;display:inline-flex;align-items:center;gap:10px;text-decoration:none;">
+                      <i class="fa-solid fa-phone"></i> +91 90439 34410
                     </a>
                   </div>
                 </div>
@@ -437,8 +796,8 @@
               <div class="footer-widget about-widget wow fadeInLeft">
                 <div class="widget-content">
                   <div class="contact-area">
-                    <a class="phone" href="tel:+919884514104">+91 98845 14104</a>
-                    <a class="mail" href="mailto:info@sasankardevelopers.com">info@sasankardevelopers.com</a>
+                    <a class="phone" href="tel:+919043934410">+91 90439 34410</a>
+                    <a class="mail" href="mailto:sd.office.che@gmail.com">sd.office.che@gmail.com</a>
                   </div>
                   <div class="social-widget mt-30">
                     <ul class="social-icon-list1 mb-5 mb-lg-0">
@@ -524,5 +883,27 @@
 <script src="js/custom-gsap.js"></script>
 <script src="js/jquery-scrolltofixed-min.js"></script>
 <script src="js/script.js"></script>
+
+<!-- Citadel Day & Night Card Switcher Script -->
+<script>
+  function switchCitadelCardView(mode, el) {
+    var card = el.closest('.project-box1');
+    if (!card) return;
+    var dayImg = card.querySelector('.card-citadel-day');
+    var nightImg = card.querySelector('.card-citadel-night');
+    var btns = card.querySelectorAll('.card-dn-switch .switch-opt');
+
+    btns.forEach(function(b) { b.classList.remove('active'); });
+    el.classList.add('active');
+
+    if (mode === 'night') {
+      if (nightImg) nightImg.style.opacity = '1';
+      if (dayImg) dayImg.style.opacity = '0';
+    } else {
+      if (nightImg) nightImg.style.opacity = '0';
+      if (dayImg) dayImg.style.opacity = '1';
+    }
+  }
+</script>
 </body>
 </html>

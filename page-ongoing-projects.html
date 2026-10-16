@@ -21,6 +21,808 @@
       overflow: hidden;
       border-radius: 20px;
     }
+
+    /* Ongoing Projects Enhancements */
+    .project-box1.ongoing-card .inner-box {
+      margin-bottom: 30px;
+    }
+    .project-box1.ongoing-card .thumb {
+      border-radius: 28px;
+    }
+    .project-box1.ongoing-card .thumb .project-loc-tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(22, 18, 36, 0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      letter-spacing: 0.3px;
+    }
+    .project-box1.ongoing-card .thumb .project-loc-tag i {
+      color: var(--theme-color1);
+      font-size: 11px;
+    }
+
+    .project-card-body {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 22px 20px;
+      margin-top: -30px;
+      margin-left: 12px;
+      margin-right: 12px;
+      position: relative;
+      z-index: 3;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      border: 1px solid #edf0f5;
+      transition: all 0.35s ease;
+    }
+    .project-box1:hover .project-card-body {
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+      border-color: rgba(238, 255, 4, 0.7);
+      transform: translateY(-4px);
+    }
+    .project-card-body .catogory-box a {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #718096;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 4px;
+    }
+    .project-card-body .title {
+      margin-bottom: 14px;
+    }
+    .project-card-body .title a {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--headings-color);
+      font-family: var(--font-family-style3);
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+    .project-specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .spec-chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f8fafc;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid #edf2f7;
+      min-height: 52px;
+    }
+    .spec-chip .icon {
+      width: 30px;
+      height: 30px;
+      background: rgba(34, 34, 34, 0.06);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--theme-color2);
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+    .spec-chip .spec-meta {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      overflow: hidden;
+    }
+    .spec-chip .spec-meta .lbl {
+      font-size: 10px;
+      color: #718096;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+    }
+    .spec-chip .spec-meta .val {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--headings-color);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .project-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .project-card-footer .price-wrap {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .project-card-footer .price-label {
+      font-size: 10.5px;
+      color: #718096;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .project-card-footer .price-amount {
+      font-size: 18px;
+      font-weight: 800;
+      color: #161224;
+      font-family: var(--font-family-style3);
+      letter-spacing: 0.5px;
+    }
+    .project-enquire-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--theme-color2);
+      color: #ffffff !important;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .project-enquire-btn:hover {
+      background: var(--theme-color1);
+      color: var(--theme-color2) !important;
+      transform: translateX(2px);
+    }
+    .project-enquire-btn i {
+      font-size: 11px;
+      transition: transform 0.3s ease;
+    }
+    .project-enquire-btn:hover i {
+      transform: translateX(3px);
+    }
+    @media (max-width: 480px) {
+      .project-specs-grid {
+        grid-template-columns: 1fr;
+      }
+      .project-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .project-enquire-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* Comparison Table Section */
+    .specs-table-card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 38px 34px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      border: 1px solid #edf0f5;
+    }
+    @media (max-width: 767.98px) {
+      .specs-table-card {
+        padding: 24px 18px;
+      }
+    }
+    .specs-table-header {
+      margin-bottom: 28px;
+    }
+    .specs-table-header .sub-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(238, 255, 4, 0.25);
+      color: var(--theme-color2);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .specs-table-header .title {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--headings-color);
+      font-family: var(--font-family-style3);
+      margin-bottom: 8px;
+    }
+    .specs-table-header .desc {
+      color: var(--text-color);
+      font-size: 14.5px;
+      margin-bottom: 0;
+      max-width: 680px;
+    }
+    .project-compare-table {
+      border-collapse: separate;
+      border-spacing: 0 10px;
+    }
+    .project-compare-table thead th {
+      background: #f8fafc;
+      color: #718096;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 14px 18px;
+      border: none;
+      white-space: nowrap;
+    }
+    .project-compare-table thead th:first-child {
+      border-radius: 12px 0 0 12px;
+    }
+    .project-compare-table thead th:last-child {
+      border-radius: 0 12px 12px 0;
+    }
+    .project-compare-table tbody tr {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+      border: 1px solid #edf2f7;
+      border-radius: 14px;
+      transition: all 0.25s ease;
+    }
+    .project-compare-table tbody tr:hover {
+      background: #fdfefe;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    }
+    .project-compare-table tbody td {
+      padding: 16px 18px;
+      vertical-align: middle;
+      border-top: 1px solid #edf2f7;
+      border-bottom: 1px solid #edf2f7;
+    }
+    .project-compare-table tbody td:first-child {
+      border-left: 1px solid #edf2f7;
+      border-radius: 14px 0 0 14px;
+    }
+    .project-compare-table tbody td:last-child {
+      border-right: 1px solid #edf2f7;
+      border-radius: 0 14px 14px 0;
+    }
+    .project-table-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .table-project-thumb {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .project-table-title strong {
+      display: block;
+      font-size: 15px;
+      color: var(--headings-color);
+      font-weight: 700;
+    }
+    .project-table-title .project-sub {
+      font-size: 12px;
+      color: #718096;
+    }
+    .table-loc {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--headings-color);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .table-loc i {
+      color: #e53e3e;
+      font-size: 12px;
+    }
+    .table-spec-val {
+      font-size: 13px;
+      font-weight: 600;
+      color: #4a5568;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .table-spec-val i {
+      color: var(--theme-color2);
+      font-size: 12px;
+    }
+    .table-price {
+      font-size: 15px;
+      font-weight: 800;
+      color: #161224;
+      font-family: var(--font-family-style3);
+    }
+    .badge-status-ongoing {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(40, 167, 69, 0.12);
+      color: #2e7d32;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-status-ongoing i {
+      font-size: 8px;
+    }
+    .table-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--theme-color2);
+      color: #ffffff !important;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .table-action-btn:hover {
+      background: var(--theme-color1);
+      color: var(--theme-color2) !important;
+    }
+
+    /* Consultation Banner */
+    .project-cta-banner {
+      background: var(--theme-color2);
+      border-radius: 28px;
+      padding: 38px 40px;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-cta-banner::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(238, 255, 4, 0.12) 0%, rgba(238, 255, 4, 0) 70%);
+      pointer-events: none;
+    }
+    .project-cta-banner .cta-pill {
+      display: inline-block;
+      background: var(--theme-color1);
+      color: var(--theme-color2);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .project-cta-banner .cta-title {
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: 700;
+      font-family: var(--font-family-style3);
+      margin-bottom: 8px;
+    }
+    .project-cta-banner .cta-desc {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 0;
+      max-width: 580px;
+    }
+
+    /* Card Day/Night Switcher */
+    .card-dn-switch {
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      background: rgba(22, 18, 36, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 4px;
+      border-radius: 50px;
+      display: inline-flex;
+      gap: 3px;
+      z-index: 5;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    }
+    .card-dn-switch .switch-opt {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 30px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.25s ease;
+    }
+    .card-dn-switch .switch-opt i {
+      font-size: 11px;
+    }
+    .card-dn-switch .switch-opt.active {
+      background: var(--theme-color1);
+      color: var(--theme-color2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .card-citadel-night {
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .card-citadel-day {
+      transition: opacity 0.5s ease-in-out;
+    }
+    .btn-dn-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(238, 255, 4, 0.15);
+      color: var(--theme-color2);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      margin-top: 4px;
+      transition: all 0.25s ease;
+    }
+    .btn-dn-pill:hover {
+      background: var(--theme-color1);
+      color: var(--theme-color2);
+      transform: translateY(-1px);
+    }
+
+    /* Day & Night Transformation Section */
+    .transformation-section {
+      position: relative;
+      background: linear-gradient(135deg, #130f20 0%, #1c162e 50%, #151124 100%);
+      padding: 100px 0;
+      color: #ffffff;
+      overflow: hidden;
+    }
+    .transformation-section::before {
+      content: "";
+      position: absolute;
+      top: -20%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(238, 255, 4, 0.08) 0%, rgba(238, 255, 4, 0) 70%);
+      pointer-events: none;
+    }
+    .transformation-section::after {
+      content: "";
+      position: absolute;
+      bottom: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(100, 149, 237, 0.08) 0%, rgba(100, 149, 237, 0) 70%);
+      pointer-events: none;
+    }
+    .transformation-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 40px;
+    }
+    .transformation-header .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(238, 255, 4, 0.18);
+      border: 1px solid rgba(238, 255, 4, 0.35);
+      color: var(--theme-color1);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      padding: 6px 18px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .transformation-header .title {
+      color: #ffffff;
+      font-size: 38px;
+      font-weight: 700;
+      font-family: var(--font-family-style3);
+      margin-bottom: 14px;
+    }
+    .transformation-header .desc {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    /* Comparison Slider Frame */
+    .day-night-slider-wrapper {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 32px;
+      padding: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .comparison-slider {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      max-height: 580px;
+      border-radius: 24px;
+      overflow: hidden;
+      user-select: none;
+      -webkit-user-select: none;
+      cursor: ew-resize;
+      background: #000000;
+    }
+    .comparison-slider .img-day {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .comparison-slider .img-night-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow: hidden;
+      will-change: width;
+    }
+    .comparison-slider .img-night-wrap .img-night {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      display: block;
+    }
+    .comparison-slider .label-badge {
+      position: absolute;
+      top: 22px;
+      padding: 7px 16px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      z-index: 8;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      pointer-events: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+    }
+    .comparison-slider .label-day {
+      right: 22px;
+      background: rgba(22, 18, 36, 0.85);
+      color: #ffde59;
+      border: 1px solid rgba(255, 222, 89, 0.35);
+    }
+    .comparison-slider .label-night {
+      left: 22px;
+      background: rgba(14, 18, 35, 0.85);
+      color: #90caf9;
+      border: 1px solid rgba(144, 202, 249, 0.35);
+    }
+    .slider-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 12;
+      pointer-events: none;
+    }
+    .slider-handle .handle-line {
+      width: 3px;
+      flex: 1;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 4px var(--theme-color1);
+    }
+    .slider-handle .handle-button {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #161224;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5), 0 0 0 3px var(--theme-color1);
+      font-size: 15px;
+      transition: transform 0.2s ease;
+    }
+    .comparison-slider:hover .slider-handle .handle-button {
+      transform: scale(1.1);
+    }
+
+    /* Controls Bar */
+    .slider-controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 8px 4px;
+    }
+    .btn-group-dn {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50px;
+      padding: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .btn-group-dn .ctrl-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: all 0.25s ease;
+    }
+    .btn-group-dn .ctrl-btn:hover {
+      color: #ffffff;
+    }
+    .btn-group-dn .ctrl-btn.active {
+      background: var(--theme-color1);
+      color: var(--theme-color2);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .slider-hint {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 13.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .slider-hint i {
+      color: var(--theme-color1);
+    }
+    .auto-play-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+    }
+    .auto-play-btn:hover,
+    .auto-play-btn.playing {
+      background: var(--theme-color1);
+      color: var(--theme-color2);
+      border-color: var(--theme-color1);
+    }
+
+    /* Transformation Highlights Row */
+    .transformation-highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+    @media (max-width: 991.98px) {
+      .transformation-highlights {
+        grid-template-columns: 1fr;
+      }
+    }
+    .trans-highlight-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.3s ease;
+    }
+    .trans-highlight-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(238, 255, 4, 0.4);
+      transform: translateY(-3px);
+    }
+    .trans-highlight-card .icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(238, 255, 4, 0.15);
+      color: var(--theme-color1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .trans-highlight-card .meta .lbl {
+      font-size: 11.5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 700;
+      letter-spacing: 0.8px;
+    }
+    .trans-highlight-card .meta .val {
+      font-size: 17px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 3px;
+      font-family: var(--font-family-style3);
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 767.98px) {
+      .slider-controls-bar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+      }
+      .btn-group-dn {
+        justify-content: center;
+        width: 100%;
+      }
+      .auto-play-btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .slider-hint {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 
@@ -112,7 +914,7 @@
               <div class="contact-info-box">
                 <i class="icon lnr-icon-phone-handset"></i>
                 <span class="title">Call Now</span>
-                <div class="text"><a href="tel:+919884514104">+91 98845 14104</a></div>
+                <div class="text"><a href="tel:+919043934410">+91 90439 34410</a></div>
               </div>
             </li>
             <li>
@@ -120,7 +922,7 @@
               <div class="contact-info-box">
                 <span class="icon lnr-icon-envelope1"></span>
                 <span class="title">Send Email</span>
-                <div class="text"><a href="mailto:info@sasankardevelopers.com">info@sasankardevelopers.com</a></div>
+                <div class="text"><a href="mailto:sd.office.che@gmail.com">sd.office.che@gmail.com</a></div>
               </div>
             </li>
           </ul>
@@ -149,11 +951,11 @@
                 <span></span>
               </div>
             </div>
-            <a href="tel:+919884514104" class="header-phone_box">
+            <a href="tel:+919043934410" class="header-phone_box">
               <span class="icon"><i aria-hidden="true" class="fas fa-phone-alt"></i></span>
               <span class="info">
                 Call Anytime
-                <strong>+91 98845 14104</strong>
+                <strong>+91 90439 34410</strong>
               </span>
             </a>
           </div>
@@ -188,54 +990,150 @@
         </div>
         <div class="row gx-4">
           <!-- Project 1: THE CITADEL -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-box1 wow fadeInUp" data-wow-delay=".1s">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-box1 ongoing-card wow fadeInUp" data-wow-delay=".1s">
               <div class="inner-box">
-                <div class="thumb" style="height: 380px;">
-                  <img src="images/THE CITADEL.jpg" alt="The Citadel">
-                  <img src="images/THE CITADEL.jpg" alt="The Citadel">
-                  <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="tag" style="top:25px;left:25px;font-size:13px;padding:6px 18px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                <div class="thumb" style="height: 330px;">
+                  <img src="images/citadel-day-web.jpg" alt="The Citadel - Day View" class="card-citadel-day">
+                  <img src="images/citadel-night-web.jpg" alt="The Citadel - Night View" class="card-citadel-night">
+                  <a href="#citadel-transformation" class="arrow-icon" title="View Day/Night Transformation"><i class="fa-solid fa-sliders"></i></a>
+                  <div class="tag" style="top:20px;left:20px;font-size:12px;padding:6px 16px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="project-loc-tag"><i class="fa-solid fa-location-dot"></i> Rajakilpakkam</div>
+                  
+                  <!-- Interactive Card Day/Night Switch -->
+                  <div class="card-dn-switch">
+                    <button type="button" class="switch-opt active" onclick="switchCitadelCardView('day', this)"><i class="fa-solid fa-sun"></i> Day</button>
+                    <button type="button" class="switch-opt" onclick="switchCitadelCardView('night', this)"><i class="fa-solid fa-moon"></i> Night</button>
+                  </div>
                 </div>
-                <div class="content">
-                  <div class="catogory-box"><a href="page-contact.html">Luxury High-Rise Residential</a></div>
+                <div class="content project-card-body">
+                  <div class="catogory-box d-flex justify-content-between align-items-center">
+                    <a href="page-contact.html">Luxury High-Rise</a>
+                    <a href="#citadel-transformation" class="btn-dn-pill"><i class="fa-solid fa-sliders"></i> Day &amp; Night</a>
+                  </div>
                   <div class="h4 title"><a href="page-contact.html">The Citadel</a></div>
+                  
+                  <div class="project-specs-grid">
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-bed"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Configuration</span>
+                        <span class="val">2, 2.5 &amp; 3 BHK</span>
+                      </div>
+                    </div>
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-map-pin"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Location</span>
+                        <span class="val">Rajakilpakkam</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                    <div class="price-wrap">
+                      <span class="price-label">Starts From</span>
+                      <span class="price-amount">₹74 Lakh – 1.10 Cr</span>
+                    </div>
+                    <a href="page-contact.html" class="project-enquire-btn">
+                      <span>Enquire</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Project 2: BLOSSOM -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-box1 wow fadeInUp" data-wow-delay=".2s">
+          <!-- Project 2: ROYAL OAK -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-box1 ongoing-card wow fadeInUp" data-wow-delay=".2s">
               <div class="inner-box">
-                <div class="thumb" style="height: 380px;">
-                  <img src="images/BLOSSOM.jpg" alt="Blossom">
-                  <img src="images/BLOSSOM.jpg" alt="Blossom">
+                <div class="thumb" style="height: 330px;">
+                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak - Urapakkam">
+                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak - Urapakkam">
                   <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="tag" style="top:25px;left:25px;font-size:13px;padding:6px 18px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="tag" style="top:20px;left:20px;font-size:12px;padding:6px 16px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="project-loc-tag"><i class="fa-solid fa-location-dot"></i> Urapakkam</div>
                 </div>
-                <div class="content">
-                  <div class="catogory-box"><a href="page-contact.html">Gated Villa Community &amp; Layouts</a></div>
-                  <div class="h4 title"><a href="page-contact.html">Blossom</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: ROYAL OAK -->
-          <div class="col-lg-4 col-md-6">
-            <div class="project-box1 wow fadeInUp" data-wow-delay=".3s">
-              <div class="inner-box">
-                <div class="thumb" style="height: 380px;">
-                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak">
-                  <img src="images/ROYAL OAK.jpg" alt="Royal Oak">
-                  <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="tag" style="top:25px;left:25px;font-size:13px;padding:6px 18px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
-                </div>
-                <div class="content">
+                <div class="content project-card-body">
                   <div class="catogory-box"><a href="page-contact.html">Premium Residential Apartments</a></div>
                   <div class="h4 title"><a href="page-contact.html">Royal Oak</a></div>
+                  
+                  <div class="project-specs-grid">
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-building"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Structure &amp; Units</span>
+                        <span class="val">5 Floors (20 Units)</span>
+                      </div>
+                    </div>
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-ruler-combined"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Built-Up Area</span>
+                        <span class="val">806 – 910 Sq. Ft.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                    <div class="price-wrap">
+                      <span class="price-label">Price Range</span>
+                      <span class="price-amount">₹44 L – ₹50.5 L</span>
+                    </div>
+                    <a href="page-contact.html" class="project-enquire-btn">
+                      <span>Enquire</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: BLOSSOM -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-box1 ongoing-card wow fadeInUp" data-wow-delay=".3s">
+              <div class="inner-box">
+                <div class="thumb" style="height: 330px;">
+                  <img src="images/BLOSSOM.jpg" alt="Blossom - Chennai">
+                  <img src="images/BLOSSOM.jpg" alt="Blossom - Chennai">
+                  <a href="page-contact.html" class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></a>
+                  <div class="tag" style="top:20px;left:20px;font-size:12px;padding:6px 16px;letter-spacing:1px;font-weight:700;text-transform:uppercase;">Under Execution</div>
+                  <div class="project-loc-tag"><i class="fa-solid fa-location-dot"></i> Chennai</div>
+                </div>
+                <div class="content project-card-body">
+                  <div class="catogory-box"><a href="page-contact.html">Gated Villa Community &amp; Layouts</a></div>
+                  <div class="h4 title"><a href="page-contact.html">Blossom</a></div>
+                  
+                  <div class="project-specs-grid">
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Community Type</span>
+                        <span class="val">Gated Villa Plots</span>
+                      </div>
+                    </div>
+                    <div class="spec-chip">
+                      <span class="icon"><i class="fa-solid fa-compass-drafting"></i></span>
+                      <div class="spec-meta">
+                        <span class="lbl">Development</span>
+                        <span class="val">Master Planned</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                    <div class="price-wrap">
+                      <span class="price-label">Pricing</span>
+                      <span class="price-amount">Price On Request</span>
+                    </div>
+                    <a href="page-contact.html" class="project-enquire-btn">
+                      <span>Enquire</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -244,6 +1142,227 @@
       </div>
     </section>
     <!-- End Project Section -->
+
+    <!-- Day & Night Transformation Section: The Citadel -->
+    <section class="transformation-section" id="citadel-transformation">
+      <div class="auto-container">
+        <div class="transformation-header wow fadeInUp">
+          <span class="badge-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Visual Transformation Showcase</span>
+          <div class="h2 title">The Citadel — Day &amp; Night Experience</div>
+          <p class="desc">
+            Discover the dual personality of The Citadel in Rajakilpakkam. Slide the interactive controller left and right or use the quick buttons below to witness natural daylight give way to illuminated nighttime elegance.
+          </p>
+        </div>
+
+        <!-- Interactive Comparison Slider Frame -->
+        <div class="day-night-slider-wrapper wow fadeInUp" data-wow-delay="200ms">
+          <div class="comparison-slider" id="citadelComparisonSlider">
+            <!-- Day Image (Background Base) -->
+            <img src="images/citadel-day-web.jpg" alt="The Citadel - Day Architectural View" class="img-day">
+            <div class="label-badge label-day"><i class="fa-solid fa-sun"></i> Golden Daylight</div>
+
+            <!-- Night Image (Clipped Layer) -->
+            <div class="img-night-wrap" id="citadelNightWrap" style="width: 50%;">
+              <img src="images/citadel-night-web.jpg" alt="The Citadel - Night Illuminated View" class="img-night">
+              <div class="label-badge label-night"><i class="fa-solid fa-moon"></i> Night Illumination</div>
+            </div>
+
+            <!-- Draggable Handle Bar -->
+            <div class="slider-handle" id="citadelSliderHandle" style="left: 50%;">
+              <div class="handle-line"></div>
+              <div class="handle-button" title="Drag to compare Day &amp; Night">
+                <i class="fa-solid fa-arrows-left-right"></i>
+              </div>
+              <div class="handle-line"></div>
+            </div>
+          </div>
+
+          <!-- Controls Bar -->
+          <div class="slider-controls-bar">
+            <div class="btn-group-dn">
+              <button type="button" class="ctrl-btn" data-target="0" onclick="setCitadelSlider(0)"><i class="fa-solid fa-sun"></i> 100% Day</button>
+              <button type="button" class="ctrl-btn active" data-target="50" onclick="setCitadelSlider(50)"><i class="fa-solid fa-circle-half-stroke"></i> 50/50 Split</button>
+              <button type="button" class="ctrl-btn" data-target="100" onclick="setCitadelSlider(100)"><i class="fa-solid fa-moon"></i> 100% Night</button>
+            </div>
+            <div class="slider-hint">
+              <i class="fa-solid fa-hand-pointer"></i> Drag slider or click buttons to view transformation
+            </div>
+            <button type="button" class="auto-play-btn" id="citadelAutoPlayBtn" onclick="toggleCitadelAutoPlay()">
+              <i class="fa-solid fa-play"></i> <span>Auto Play</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Transformation Highlights Grid -->
+        <div class="transformation-highlights wow fadeInUp" data-wow-delay="300ms">
+          <div class="trans-highlight-card">
+            <div class="icon-box"><i class="fa-solid fa-building-circle-check"></i></div>
+            <div class="meta">
+              <span class="lbl">Architectural Design</span>
+              <div class="val">Modern High-Rise Living</div>
+            </div>
+          </div>
+          <div class="trans-highlight-card">
+            <div class="icon-box"><i class="fa-solid fa-bed"></i></div>
+            <div class="meta">
+              <span class="lbl">Configurations</span>
+              <div class="val">2, 2.5 &amp; 3 BHK Homes</div>
+            </div>
+          </div>
+          <div class="trans-highlight-card">
+            <div class="icon-box"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+            <div class="meta">
+              <span class="lbl">Starting Investment</span>
+              <div class="val">₹74 Lakh – ₹1.10 Cr</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Day & Night Transformation Section -->
+
+    <!-- Project Specifications Table / Comparison Section -->
+    <section class="project-specs-section pt-0 pb-100">
+      <div class="auto-container">
+        <div class="specs-table-card wow fadeInUp">
+          <div class="specs-table-header">
+            <div>
+              <span class="sub-badge"><i class="fa-solid fa-table-cells-large"></i> Project Specifications</span>
+              <div class="h3 title">Compare Ongoing Developments</div>
+            </div>
+            <p class="desc">Explore detailed configurations, location highlights, and pricing for our current ongoing developments across Chennai.</p>
+          </div>
+          <div class="table-responsive">
+            <table class="table project-compare-table mb-0">
+              <thead>
+                <tr>
+                  <th>Project Name</th>
+                  <th>Location</th>
+                  <th>Type &amp; Configuration</th>
+                  <th>Area / Size</th>
+                  <th>Price Range</th>
+                  <th>Status</th>
+                  <th class="text-end">Enquiry</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="project-table-title">
+                      <img src="images/citadel-day-web.jpg" alt="The Citadel" class="table-project-thumb">
+                      <div>
+                        <strong>The Citadel</strong>
+                        <span class="project-sub">Luxury High-Rise <a href="#citadel-transformation" style="color:var(--theme-color1);font-weight:700;margin-left:6px;text-decoration:underline;font-size:11px;"><i class="fa-solid fa-sliders"></i> Day/Night</a></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="table-loc"><i class="fa-solid fa-location-dot"></i> Rajakilpakkam</span>
+                  </td>
+                  <td>
+                    <span class="table-spec-val"><i class="fa-solid fa-bed"></i> 2, 2.5 &amp; 3 BHK</span>
+                  </td>
+                  <td>
+                    <span class="table-spec-val"><i class="fa-solid fa-building"></i> High-Rise Units</span>
+                  </td>
+                  <td>
+                    <div class="table-price">Starts ₹74 Lakh – 1.10 Cr</div>
+                  </td>
+                  <td>
+                    <span class="badge-status-ongoing"><i class="fa-solid fa-circle-dot"></i> Under Execution</span>
+                  </td>
+                  <td class="text-end">
+                    <a href="page-contact.html" class="table-action-btn">Enquire <i class="fa-solid fa-arrow-right"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="project-table-title">
+                      <img src="images/ROYAL OAK.jpg" alt="Royal Oak" class="table-project-thumb">
+                      <div>
+                        <strong>Royal Oak</strong>
+                        <span class="project-sub">Residential Apartments</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="table-loc"><i class="fa-solid fa-location-dot"></i> Urapakkam</span>
+                  </td>
+                  <td>
+                    <span class="table-spec-val"><i class="fa-solid fa-building"></i> 5 Floors (20 Units)</span>
+                  </td>
+                  <td>
+                    <span class="table-spec-val"><i class="fa-solid fa-ruler-combined"></i> 806 to 910 Sq. Ft.</span>
+                  </td>
+                  <td>
+                    <div class="table-price">₹44 L – ₹50.5 L</div>
+                  </td>
+                  <td>
+                    <span class="badge-status-ongoing"><i class="fa-solid fa-circle-dot"></i> Under Execution</span>
+                  </td>
+                  <td class="text-end">
+                    <a href="page-contact.html" class="table-action-btn">Enquire <i class="fa-solid fa-arrow-right"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="project-table-title">
+                      <img src="images/BLOSSOM.jpg" alt="Blossom" class="table-project-thumb">
+                      <div>
+                        <strong>Blossom</strong>
+                        <span class="project-sub">Villa Plots &amp; Community</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="table-loc"><i class="fa-solid fa-location-dot"></i> Chennai</span>
+                  </td>
+                  <td>
+                    <span class="table-spec-val"><i class="fa-solid fa-house-chimney"></i> Gated Villa Community</span>
+                  </td>
+                  <td>
+                    <span class="table-spec-val"><i class="fa-solid fa-compass-drafting"></i> Premium Layout Plots</span>
+                  </td>
+                  <td>
+                    <div class="table-price">Price On Request</div>
+                  </td>
+                  <td>
+                    <span class="badge-status-ongoing"><i class="fa-solid fa-circle-dot"></i> Under Execution</span>
+                  </td>
+                  <td class="text-end">
+                    <a href="page-contact.html" class="table-action-btn">Enquire <i class="fa-solid fa-arrow-right"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Consultation Banner -->
+        <div class="project-cta-banner wow fadeInUp mt-50">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <span class="cta-pill">Direct Consultation</span>
+              <div class="h3 cta-title">Looking for Floor Plans or Pricing Sheets?</div>
+              <p class="cta-desc">Speak directly with our project advisors for site visit appointments, detailed floor plans, and custom payment schedules.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+              <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
+                <a href="tel:+919043934410" class="theme-btn btn-style-two">
+                  <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                  <span class="btn-title">+91 90439 34410</span>
+                </a>
+                <a href="page-contact.html" class="theme-btn btn-style-four">
+                  <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                  <span class="btn-title">Get Quote</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Project Specs Section -->
 
     <!-- Main Footer -->
     <footer class="main-footer footer-style-one">
@@ -273,8 +1392,8 @@
               <div class="footer-widget about-widget wow fadeInLeft">
                 <div class="widget-content">
                   <div class="contact-area">
-                    <a class="phone" href="tel:+919884514104">+91 98845 14104</a>
-                    <a class="mail" href="mailto:info@sasankardevelopers.com">info@sasankardevelopers.com</a>
+                    <a class="phone" href="tel:+919043934410">+91 90439 34410</a>
+                    <a class="mail" href="mailto:sd.office.che@gmail.com">sd.office.che@gmail.com</a>
                   </div>
                   <div class="social-widget mt-30">
                     <ul class="social-icon-list1 mb-5 mb-lg-0">
@@ -359,5 +1478,172 @@
 <script src="js/custom-gsap.js"></script>
 <script src="js/jquery-scrolltofixed-min.js"></script>
 <script src="js/script.js"></script>
+
+<!-- Citadel Day & Night Interactive Transformation Script -->
+<script>
+  // Citadel Card Day/Night Switcher
+  function switchCitadelCardView(mode, el) {
+    var card = el.closest('.project-box1');
+    if (!card) return;
+    var dayImg = card.querySelector('.card-citadel-day');
+    var nightImg = card.querySelector('.card-citadel-night');
+    var btns = card.querySelectorAll('.card-dn-switch .switch-opt');
+
+    btns.forEach(function(b) { b.classList.remove('active'); });
+    el.classList.add('active');
+
+    if (mode === 'night') {
+      if (nightImg) nightImg.style.opacity = '1';
+      if (dayImg) dayImg.style.opacity = '0';
+    } else {
+      if (nightImg) nightImg.style.opacity = '0';
+      if (dayImg) dayImg.style.opacity = '1';
+    }
+  }
+
+  // Citadel Interactive Transformation Slider
+  (function() {
+    function setupSlider() {
+      var container = document.getElementById('citadelComparisonSlider');
+      if (!container) return;
+      var nightWrap = document.getElementById('citadelNightWrap');
+      var nightImg = nightWrap ? nightWrap.querySelector('img') : null;
+      var handle = document.getElementById('citadelSliderHandle');
+      if (!nightWrap || !nightImg || !handle) return;
+
+      var isDragging = false;
+      var autoPlayActive = false;
+      var autoPlayDir = 1;
+      var currentPct = 50;
+      var autoPlayTimer = null;
+
+      function syncImageWidth() {
+        var w = container.offsetWidth;
+        if (w > 0) {
+          nightImg.style.width = w + 'px';
+        }
+      }
+
+      window.addEventListener('resize', syncImageWidth);
+      syncImageWidth();
+      if (nightImg.complete) {
+        syncImageWidth();
+      } else {
+        nightImg.onload = syncImageWidth;
+      }
+
+      function setPosition(pct, updateButtons) {
+        pct = Math.max(0, Math.min(100, pct));
+        currentPct = pct;
+        nightWrap.style.width = pct + '%';
+        handle.style.left = pct + '%';
+
+        if (updateButtons !== false) {
+          var btns = document.querySelectorAll('.slider-controls-bar .ctrl-btn');
+          btns.forEach(function(b) { b.classList.remove('active'); });
+          if (Math.abs(pct - 0) < 2) {
+            var b0 = document.querySelector('.slider-controls-bar .ctrl-btn[data-target="0"]');
+            if (b0) b0.classList.add('active');
+          } else if (Math.abs(pct - 50) < 4) {
+            var b50 = document.querySelector('.slider-controls-bar .ctrl-btn[data-target="50"]');
+            if (b50) b50.classList.add('active');
+          } else if (Math.abs(pct - 100) < 2) {
+            var b100 = document.querySelector('.slider-controls-bar .ctrl-btn[data-target="100"]');
+            if (b100) b100.classList.add('active');
+          }
+        }
+      }
+
+      function updateFromPointer(clientX) {
+        var rect = container.getBoundingClientRect();
+        var offsetX = clientX - rect.left;
+        var pct = (offsetX / rect.width) * 100;
+        setPosition(pct);
+      }
+
+      function startDrag(e) {
+        isDragging = true;
+        stopAutoPlay();
+        var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        updateFromPointer(clientX);
+      }
+
+      function moveDrag(e) {
+        if (!isDragging) return;
+        var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        updateFromPointer(clientX);
+      }
+
+      function endDrag() {
+        isDragging = false;
+      }
+
+      container.addEventListener('mousedown', startDrag);
+      window.addEventListener('mousemove', moveDrag);
+      window.addEventListener('mouseup', endDrag);
+
+      container.addEventListener('touchstart', startDrag, { passive: true });
+      window.addEventListener('touchmove', moveDrag, { passive: true });
+      window.addEventListener('touchend', endDrag);
+
+      window.setCitadelSlider = function(pct) {
+        stopAutoPlay();
+        nightWrap.style.transition = 'width 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+        handle.style.transition = 'left 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+        setPosition(pct, true);
+        setTimeout(function() {
+          nightWrap.style.transition = '';
+          handle.style.transition = '';
+        }, 450);
+      };
+
+      function autoPlayStep() {
+        if (!autoPlayActive) return;
+        currentPct += 0.35 * autoPlayDir;
+        if (currentPct >= 96) {
+          currentPct = 96;
+          autoPlayDir = -1;
+        } else if (currentPct <= 4) {
+          currentPct = 4;
+          autoPlayDir = 1;
+        }
+        setPosition(currentPct, false);
+        autoPlayTimer = requestAnimationFrame(autoPlayStep);
+      }
+
+      function stopAutoPlay() {
+        if (autoPlayActive) {
+          autoPlayActive = false;
+          if (autoPlayTimer) cancelAnimationFrame(autoPlayTimer);
+          var btn = document.getElementById('citadelAutoPlayBtn');
+          if (btn) {
+            btn.classList.remove('playing');
+            btn.innerHTML = '<i class="fa-solid fa-play"></i> <span>Auto Play</span>';
+          }
+        }
+      }
+
+      window.toggleCitadelAutoPlay = function() {
+        var btn = document.getElementById('citadelAutoPlayBtn');
+        if (autoPlayActive) {
+          stopAutoPlay();
+        } else {
+          autoPlayActive = true;
+          if (btn) {
+            btn.classList.add('playing');
+            btn.innerHTML = '<i class="fa-solid fa-pause"></i> <span>Pause</span>';
+          }
+          autoPlayTimer = requestAnimationFrame(autoPlayStep);
+        }
+      };
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupSlider);
+    } else {
+      setupSlider();
+    }
+  })();
+</script>
 </body>
 </html>
